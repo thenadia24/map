@@ -46,7 +46,7 @@ def process_locations_list(path_to_locations_list):
 
 def generate_map(dataset):
     """
-     this function accepts a list of lists in the form.
+     accepts a list of lists in the form.
      [year, coordinates, movie title].
      Creates a folium map, overcomes a layer with tooltips (which is built from dataset).
     Then adds this loyer, and in addition some default Layer control.
@@ -69,7 +69,7 @@ def get_coordinates(address):
     """
 
     :param address:
-    :return:latitude and longitud
+    :return: latitude and longitud
     """
     geolocator = Nominatim(user_agent="Lakoma", timeout=5)
     location = geolocator.geocode(address)
