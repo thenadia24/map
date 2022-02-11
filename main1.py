@@ -78,10 +78,13 @@ def get_coordinates(address):
     return location.latitude, location.longitude
 
 
-    # calculate_distance(user_coords, place_coords):
+def calculate_distance(user_coords, place_coords):
+    """
+    returns distsnce between two tuples of coordinates
+    """
     # calculate Hoversin distance between user coords (lat, long)
     #geopy.distance.vincenty(location1, location2).km
-    #return 5
+    return 5
 
 
 def create_map(data, map_name):
